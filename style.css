@@ -1,0 +1,112 @@
+:root {
+    --card-distance: -20vh;
+    --blue: blue;
+    --white: white;
+    -black: black;
+    --icon-color: rgba(0, 4, 255, 0.562);
+}
+
+
+body {
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+
+nav {
+    min-height: 5vh;
+}
+
+.hero-bg {
+    background-image: url(https://images.unsplash.com/photo-1557452765-5b57d100c1dc?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+.vr {
+    height: 100px;
+    padding: 6px;
+    border-right: 3px solid var(--black);
+    border-radius: 30px;
+    display: block;
+}
+
+.t-header {
+    display: block;
+}
+
+.blue-btn {
+    background-color: var(--blue);
+    border-radius: 30px;
+    color: var(--white);
+}
+
+
+.container {
+    position: relative;
+    padding: 0;
+    width: 18rem;
+}
+
+
+.card-body {
+    /* position: absolute; */
+    top: 100px;
+    bottom: 14vh;
+    bottom: var(--magic-card-distance);
+    background-color: var(--white);
+    color: var(--black);
+    right: -100px;
+    max-width: 350px;
+
+}
+
+.second-img {
+    position: relative;
+    height: 35rem;
+
+}
+
+.icon {
+    color: var(--icon-color);
+    font-size: 7em;
+    text-align: center;
+    translate: -20%;
+}
+
+.second-icon {
+    color: var(--icon-color);
+    font-size: 2em;
+    position: relative;
+
+}
+
+.third-img {
+    height: 15rem;
+    max-width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.third-icon {
+    color: var(--icon-color);
+    font-size: 1.5em;
+    position: relative;
+}
+
+@media screen and (max-width: 576px) {
+    .vr {
+        display: none;
+    }
+
+    .t-header {
+        display: none;
+    }
+
+
+}
