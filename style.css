@@ -6,16 +6,13 @@
     --icon-color: rgba(0, 4, 255, 0.562);
 }
 
-
 body {
-
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     margin: 0;
 }
-
 
 nav {
     min-height: 5vh;
@@ -46,44 +43,27 @@ nav {
     color: var(--white);
 }
 
-
-.container {
-    position: relative;
-    padding: 0;
-    width: 18rem;
-}
-
-
-.card-body {
-    /* position: absolute; */
-    top: 100px;
-    bottom: 14vh;
-    bottom: var(--magic-card-distance);
+.floating-card {
+    position: absolute;
     background-color: var(--white);
     color: var(--black);
-    right: -100px;
-    max-width: 350px;
-
+    min-width: 350px;
 }
 
 .second-img {
-    position: relative;
+    /* position: relative; */
     height: 35rem;
-
 }
 
 .icon {
     color: var(--icon-color);
-    font-size: 7em;
-    text-align: center;
-    translate: -20%;
+    font-size: 10em;
 }
 
 .second-icon {
     color: var(--icon-color);
     font-size: 2em;
     position: relative;
-
 }
 
 .third-img {
@@ -99,7 +79,7 @@ nav {
     position: relative;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .vr {
         display: none;
     }
@@ -108,5 +88,7 @@ nav {
         display: none;
     }
 
-
+    .floating-card {
+        position: unset;
+    }
 }
